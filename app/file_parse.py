@@ -42,6 +42,7 @@ def parse_pdf(file_name):
         data["text"] = " ".join([elem.text_content() for elem in html.xpath("//b")])
         data["title"] = file_name
         es.index(index=index_name, doc_type="txt", body=data)
+        call(['rm','-Rf','temp'])
     else:
         filename = file_name.split(".")[0] + ".txt"
         call(["pdftotext","-layout",filename])
