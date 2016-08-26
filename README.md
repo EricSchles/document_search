@@ -26,6 +26,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 
 ##Using this tool
 
+To run this tool you'll need to do 
+
+`python run.py` from the root directory of this repo
+
+Then head over to [http://localhost:5000](http://localhost:5000)
+
 Now that you have all your installation out of the way you're ready to start uploading documents for indexing.  Right now I only have a web interface for doing this, but feel free to take my code and build on it.  
 
 Some advice:
