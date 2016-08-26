@@ -1,106 +1,33 @@
-Flask for ElasticSearch 
-==================
+## Installation
 
-I have built a nice search-engine template using Python Flask in the backend and providing faceted navigation in the frontend.
+This is a generalized search tool built on top of elastic search.  It will ingest documents, analyze their type and then make them searchable.  At this point, only full word search with correct spelling is supported, but other features will be added to allow for fuzzy search, partial words, etc.
 
-The frontend was built using:
+##How to install:
 
-http://materializecss.com/
+`sudo pip install -r requirements.txt`
 
-This project might be interesting for you, if you want to build a lightweight searchengine with Flask on top of an already existing ElasticSearch index. 
+Next you'll need ocropy - this handles OCR
 
+I'm going to recommend my fork because it includes a little more than the original library:
 
-Demo
-----
-![alt tag](https://raw.github.com/svola/fantasticsearch/master/doku/colibrisearch-demo.png)
+https://github.com/EricSchles/ocropy
 
+You'll need to follow the installation documentation in the README.md in that repo to finish out the installation.  Make sure to run the tests, otherwise things might not work.
 
+You'll also need elasticsearch running locally - for that you'll need to install elastic search.  I'm going to recommend the official docs:
 
-Dependencies
-----------
-You need Python 2.7+, the packages elasticsearch and flask
+https://www.elastic.co/guide/en/elasticsearch/guide/master/getting-started.html
 
-```
-$ pip install elasticsearch
-$ pip install flask
-```
+But you can also find lots of great guides, here are a few for getting set up:
 
-And you should have a running instance of ElasticSearch Version 1.x. 
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
 
+https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 
-Setup
-----------
+##Using this tool
 
-You need to edit 2 files accordingly to run your project.
+Now that you have all your installation out of the way you're ready to start uploading documents for indexing.  Right now I only have a web interface for doing this, but feel free to take my code and build on it.  
 
+Some advice:
 
-1. fantasticsearch/views.py:
-
-```
-#TODO: Configuration
-host = "http://localhost:9200"
-indexName = "myIndex"
-aggregationFields = ["field1", "field2"]
-```
-
-Basic queries with filters are already setup, but you can configure them according to your needs.
-Currently it is implemented to support the most generic and powerful query_string_query:
-
-http://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax
-
-
-2. fantasticsearch/templates/container.html
-
-Inside the first row, please edit FIELD1 and FIELD2 according to your needs. 
-And change the fieldnames inside the properties id and for to match your exact fieldnames as provided in the mapping.
-
-```
-    <input type="checkbox" id="field1-{{bucket.key}}">
-    <label for="field1-{{bucket.key}}">{{bucket.key}} ({{bucket.doc_count}})</label>
-```
-
-Feel free to add more aggregations. 
-
-
-And then just start the flask-development server: 
-
-```
-$ python run.py	
-```
-
-
-
-Mapping considerations
----------------------------------
-
-Usually you don't need to create a mapping for an index with ElasticSearch, as it's schemaless, or better, creates a schema on the fly based on the first document.
-BUT if you want to provide faceted navigation, you should create an explicit mapping. 
-Per default each field is analyzed. 
-A terms facet of an analyzed field, will show you the analyzed tokens.
-
-Which looks like this:
-
-![alt tag](https://raw.github.com/svola/ElasticUI-extension/master/doku/facet-bad.png)
-
-What you want instead, is usually this:
-
-![alt tag](https://raw.github.com/svola/ElasticUI-extension/master/doku/facet-good.png)
-
-And for this you need to configure your mapping accordingly, before creating the index:
-
-Usually you want the field both, intuitively searchable and "facetable", so you should use multifields like this:
-
-```
-"author" : {
-      "type" : "string",
-      "analyzer" : "english", #or standard, or any other language. For proper names, it's hard to find a "right way" 
-      "fields": {
-              "raw":   { "type": "string", "index": "not_analyzed" }
-      }
-}
-```
-  
-http://www.elastic.co/guide/en/elasticsearch/reference/current/_multi_fields.html
-
-
-
+If you're going to upload pdf's that aren't ocr'ed you'll need to upload them as .png's - the tool will take it from there.
