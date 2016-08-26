@@ -1,6 +1,6 @@
-from app import fantasticsearch
+from app import app
 
-fantasticsearch.run(debug=True)
+app.run(debug=True)
 
 
 

@@ -2,15 +2,16 @@ from flask import render_template, request, redirect, url_for
 from app import app
 from elasticsearch import Elasticsearch
 from .file_parse import parse_docx, parse_txt, es
+import os
 
 #https://elasticsearch-py.readthedocs.io/en/master/
-index_name = "my_index"
+index_name = "search_index"
 
 @app.route('/', methods=["GET","POST"])
 def index():
     return render_template('index.html')
 
-@app.route("/upload",methods["GET","POST"])
+@app.route("/upload",methods=["GET","POST"])
 def upload():
     file_obj = request.files["file"]
     if file_obj:
@@ -27,7 +28,7 @@ def upload():
 #how to do search courtesy of: https://marcobonzanini.com/2015/02/02/how-to-query-elasticsearch-with-python/
 @app.route('/search', methods=['GET','POST'])
 def search():
-    query request.form.get("query")
-    results = es.search(index=index_name,body={"query":{"match": {"message":query}}})
+    query = request.form.get("query")
+    results = es.search(index=index_name,body={"query":{"match": {"text":query}}})
     return render_template('results.html', results=results)
 
