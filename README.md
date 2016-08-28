@@ -1,4 +1,4 @@
-## Installation
+## Summary of functionality
 
 This is a generalized search tool built on top of elastic search.  It will ingest documents, analyze their type and then make them searchable.  At this point, only full word search with correct spelling is supported, but other features will be added to allow for fuzzy search, partial words, etc.
 
