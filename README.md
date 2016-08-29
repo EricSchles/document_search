@@ -24,6 +24,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-el
 
 https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
 
+For Mac OSX you'll need to follow: http://stackoverflow.com/questions/22850247/installing-elasticsearch-on-osx-mavericks
+
 ##Using this tool
 
 To run this tool you'll need to do 

@@ -18,7 +18,7 @@ def parse_docx(file_name):
     es.index(index=index_name, doc_type="docx", body=data)
 
 def parse_txt(file_name,pdf_parser=False):
-    if not pdf_parser: pdf_os.chdir("app/files_to_index")
+    if not pdf_parser: os.chdir("app/files_to_index")
     with open(file_name,"r") as f:
         data = {}
         data["text"] = f.read()
