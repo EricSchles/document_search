@@ -1,4 +1,4 @@
-## Installation
+## Summary of functionality
 
 This is a generalized search tool built on top of elastic search.  It will ingest documents, analyze their type and then make them searchable.  At this point, only full word search with correct spelling is supported, but other features will be added to allow for fuzzy search, partial words, etc.
 
@@ -23,6 +23,8 @@ But you can also find lots of great guides, here are a few for getting set up:
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-elasticsearch-on-ubuntu-14-04
 
 https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elk-stack-on-ubuntu-14-04
+
+For Mac OSX you'll need to follow: http://stackoverflow.com/questions/22850247/installing-elasticsearch-on-osx-mavericks
 
 ##Using this tool
 
