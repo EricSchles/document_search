@@ -44,7 +44,7 @@ def parse_pdf(file_name):
         es.index(index=index_name, doc_type="txt", body=data)
         call(['rm','-Rf','temp'])
     else:
+        call(["pdftotext","-layout",file_name])
         filename = file_name.split(".")[0] + ".txt"
-        call(["pdftotext","-layout",filename])
         parse_txt(filename,pdf_parser=True)
 

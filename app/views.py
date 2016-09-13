@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect, url_for
 from app import app
 from elasticsearch import Elasticsearch
-from .file_parse import parse_docx, parse_txt, es
+from .file_parse import parse_docx, parse_txt, parse_pdf, es
 import os
 
 #https://elasticsearch-py.readthedocs.io/en/master/
@@ -21,6 +21,9 @@ def upload():
             parse_docx(file_obj.filename)
         elif file_type == "txt":
             parse_txt(file_obj.filename)
+        elif file_type == 'pdf' or file_type == 'png':
+            parse_pdf(file_obj.filename)
+        
     else:
         return redirect(url_for("index"))
     return render_template("index.html")
