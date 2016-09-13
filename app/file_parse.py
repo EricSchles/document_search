@@ -28,18 +28,21 @@ def parse_txt(file_name,pdf_parser=False):
 def parse_pdf(file_name):
     os.chdir("app/files_to_index")
     if file_name.endswith(".png"):
+        #import code
+        #code.interact(local=locals())
         # perform binarization
-        call(['ocropus-nlbin',file_name,'-o','temp'])
+        call(['ocropus-nlbin',file_name,'-n','-o','temp'])
         # perform page layout analysis
-        call(['ocropus-gpageseg',"'temp/????.bin.png'"])
+        call(['ocropus-gpageseg','temp/????.bin.png','-n'])
         # perform text line recognition
-        call(['ocropus-rpred','-m','../en-default.pyrnn.gz',"'temp/????/??????.bin.png'"])
+        call(['ocropus-rpred','-m','../en-default.pyrnn.gz',"temp/????/??????.bin.png"])
         #generate HTML output
-        call(['ocropus-hocr',"'temp/????.bin.png'",'-o','temp.html'])
-        with open("temp/0001/index.html","r") as f:
-            html = lxml.html.fromstring(f.read())
+        call(['ocropus-hocr',"temp/????.bin.png",'-o','temp.html'])
+        with open("temp.html","r") as f:
+            html_text = f.read()
+            html = lxml.html.fromstring(html_text.encode("ascii","ignore"))
         data = {}
-        data["text"] = " ".join([elem.text_content() for elem in html.xpath("//b")])
+        data["text"] = " ".join([elem.text_content() for elem in html.xpath("//span")])
         data["title"] = file_name
         es.index(index=index_name, doc_type="txt", body=data)
         call(['rm','-Rf','temp'])
