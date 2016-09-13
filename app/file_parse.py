@@ -46,9 +46,5 @@ def parse_pdf(file_name):
     else:
         call(["pdftotext","-layout",file_name])
         filename = file_name.split(".")[0] + ".txt"
-<<<<<<< HEAD
-=======
-        call(["pdftotext","-layout",file_name])
->>>>>>> 951bdfea51213e633e5877e1a99c4ea9a7e934b3
         parse_txt(filename,pdf_parser=True)
 
