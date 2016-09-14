@@ -22,8 +22,7 @@ def upload():
         elif file_type == "txt":
             parse_txt(file_obj.filename)
         elif file_type == 'pdf' or file_type == 'png':
-            parse_pdf(file_obj.filename)
-        
+            parse_pdf(file_obj.filename)        
     else:
         return redirect(url_for("index"))
     return render_template("index.html")
