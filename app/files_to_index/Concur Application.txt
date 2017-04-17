@@ -1,0 +1,130 @@
+  PROCEDURES FOR COMPLETING THE CONCUR GOVERNMENT EDITION (CGE) SYSTEM ACCESS REQUEST
+                                        FORM
+
+NOTE: GSA employee and Invitational Traveler User Accounts must have an Employee/ Vendor ID number before
+completing the CGE Access Request Form. If you do not have an Employee/Vendor ID number, complete the
+attached Electronic Funds Transfer (EFT) Enrollment Form and fax it to the number on the bottom of the form.
+
+Section 1. Type of Access Request
+Check the appropriate box for the type of access request. If this is a Revise User request, enter the Employee/Vendor ID
+and only complete the new or updated information in Section 2 below.
+
+Section 2. Requestor Information
+a. Name: Enter your name as it appears on your photo identification that you will present to airport security.
+b. Email Address: Enter your @gsa.gov email address. For Invitational Travelers, this will be an email address of a GSA
+employee from the sponsoring office (usually a Travel Arranger).
+c. Work Phone: Enter numbers only. The form will automatically format the numbers.
+d. Correspondence/Office Symbol: Enter your Correspondence/Office Symbol found in box 40 of your SF-50.
+Invitational Travelers and Contractors will use the Correspondence/Office Symbol of the sponsoring office.
+e. Employee/Vendor ID: Enter your Employee/Vendor ID number provided by the Financial Operations and
+Disbursement Division. (Only required for users who will be claiming reimbursement as a Traveler. All others leave blank.)
+f. User Role: Select all applicable roles requested.
+         Note 1. Invitational Traveler roles and Contractor roles must be completed and digitally signed (Section 3) by a
+         GSA employee from the sponsoring office.
+         Note 2. The only user role permitted for an Invitational Traveler is Traveler. Invitational Travelers cannot be
+         assigned a Travel Arranger, Super User or View Only Auditor role.
+         Note 3. Contractors are only permitted to have Travel Arranger roles.
+g. User Type: Select only one user type.
+
+
+Section 3. Requestor – Certification and Signature
+       After verifying that all fields are correct, make sure your GSA ID card is inserted in the card reader, and then click
+       on the Signature line to digitally sign the document.
+       When the Sign Document box appears, verify your name is correct as it appears and click on the “Sign” button.
+       If your name does not appear in the space next to digital verification information, click on the drop-down menu
+       next to the “Sign As:” heading at the top of the Sign Document box, select your name from the drop-down list
+       and then click the “Sign” button.
+       You will next be prompted to save the document. Please assign a file name that identifies the employee who the
+       document is for (i.e., CGE Access Form_John Doe.)
+       Enter your GSA ID PIN when prompted and click OK.
+       Your digital signature should now appear on the digital signature line of the document.
+       Close the document and e-mail it to your supervisor for approval.
+
+Section 4. Supervisor – Certification and Signature
+       After receiving the form from your employee/requester, verify all fields are correct, make sure your GSA ID card is
+       inserted in the card reader, then click on the Signature line to digitally sign the document.
+       When the Sign Document box appears, verify your name is correct as it appears and click on the “Sign” button.
+       If your name does not appear in the space next to digital verification information, click on the drop-down menu
+       next to the “Sign As:” heading at the top of the Sign Document box, select your name from the drop-down list
+       and then click the “Sign” button.
+       You will next be prompted to save the document. Please assign a file name that identifies the employee who the
+       document is for (i.e., CGE Access Form_John Doe.)
+       Enter your GSA ID PIN when prompted and click OK.
+       Your digital signature should now appear on the digital signature line of the document. Close the document and e-
+       mail it to cge-access-requests@gsa.gov for processing.
+                         Concur Government Edition (CGE) Access Request Form
+                                                     * All fields must be completed
+
+
+1. Type of Access Request* (select only one)
+
+    Add User         Revise Current User (i.e., name change, office change, additional user roles)
+2. Requestor Information
+
+a. Name* (As it appears on your photo identification you will present to
+                                                                                                                 c. Work Phone*
+airport security)                                                                 b. Email Address*
+                                                                                                              (enter numbers only)
+       First            Middle                 Last                  Suffix
+
+
+      d. Correspondence/                 e. Employee/Vendor ID*
+         Office Symbol*               (Not required for contractors)
+
+
+
+f. User Roles* (select all roles needed)
+
+    Traveler           Travel Arranger             Travel Approver            Super User          View Only Auditor (OIG Staff Only)
+
+g. User Type* (select only one)
+
+    GSA Employee           Invitational Traveler        Contractor
+         Regular
+         Virtual
+
+3. Requestor - Certification and Signature*
+I certify that I have read the GSA IT Security Rules of Behavior and have taken the Mandatory IT Security Awareness Training/
+Privacy Act Training. I agree to protect the confidentiality of my User ID and password and to not share these with any other
+individuals. I will exercise care to protect all system assets while performing my duties.
+Signature                                                                                                           Date
+
+
+
+
+4. Supervisor - Certification and Signature*
+
+I certify that the work duties of this requestor align with the need for access to the above-indicated system and that the Mandatory IT
+Security Awareness Training/Privacy Act Training has been completed.
+Printed Name                             Signature                                  Work Phone                       Date
+                                                                                    (enter numbers only)
+                      ELECTRONIC FUNDS TRANSFER (EFT) ENROLLMENT FORM
+  Use this form to enroll in Direct Deposit of your federal payment from the General Services Administration
+
+Privacy Act Statement Collection of this information is authorized by 31 U.S.C. 3332(g), 3325(d) and 7701(c). The information will be
+used by the Government to make payments by EFT to a vendor. This information may also be used for income reporting and for
+collecting and reporting on any delinquent amounts arising out of a vendor's relationship with the Government. Disclosure of the
+information by the vendor is mandatory. Failure to provide the requested information may result in the delay or withholding of
+payment to the vendor.
+Last Name                                 First Name                                M.I.       Social Security Number (SSN)
+
+
+Home Address                                             City                                     State       ZIP
+
+
+
+Financial Institution Name                                                Financial Institution Routing Transit Number (RTN) 9 digits
+
+
+Depositor Account Number                                                  Account Type
+                                                                              Checking         Savings
+Payee Email                                                               Work Phone
+
+
+
+               Return to Heartland Finance Center, Financial Operations and Disbursement Division
+
+                                                       Fax to: 816-823-5415
+
+                     Finance Helpdesk Phone Number 816-926-7287 or 1-800-676-3690, option 3
+

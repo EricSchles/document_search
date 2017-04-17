@@ -26,6 +26,12 @@ https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-lo
 
 For Mac OSX you'll need to follow: http://stackoverflow.com/questions/22850247/installing-elasticsearch-on-osx-mavericks
 
+You'll also need poppler-utils:
+
+To get this on ubuntu - https://poppler.freedesktop.org/
+
+To get this on mac osx - brew install poppler
+
 ##Using this tool
 
 To run this tool you'll need to do 
