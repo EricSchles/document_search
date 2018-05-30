@@ -1,5 +1,0 @@
-Flask
-python-docx
-pandas
-elasticsearch
-lxml.html
