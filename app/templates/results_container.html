@@ -1,0 +1,17 @@
+{% if results %}
+
+<h4>Results</h4>
+	<p>{{ results["hits"]["total"] }} results ({{results["took"]}}ms)</p>
+
+<div id="container" class="row">
+<ul>
+{% for doc in results["hits"]["hits"] %}
+
+	<li><label>Filename: </label>{{doc["_source"]["title"]}}</li>
+	<li><label>Text: </label>{{doc["_source"]["text"]}}</li>
+</ul>
+</div>
+{% endfor %}
+
+{% endif %}
+

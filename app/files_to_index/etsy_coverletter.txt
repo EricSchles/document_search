@@ -1,0 +1,43 @@
+To whom it may concern,
+
+I am very interested in working for Etsy and believe I could be a strong asset to the company.
+Over the course of my career I have worked on a diverse set of problems across the data
+science and programming domains. At each job I’ve tried to help create and instill a culture of
+learning, support and thoughtfulness, empowering those around me to do better, as well as
+accomplishing my own tasks.
+
+In my most recent experience at Elucd I built the core intellectual property at the company,
+developed a pipeline for growing a strong and ethnically diverse technical team, and supported
+the founders vision of growth. Since the goal at Elucd was to develop a data driven
+organization, I taught the developers on the team statistics, usually while pairing on tasks or in a
+lecture style format. As for the technical aspects of my job, I made use of deep learning to
+create an demographically representative sentiment index score for law enforcement, similar to
+a FICO credit score. The score generation included significant preprocessing, bootstrap
+resampling, racial debiasing, and finally reweighting via a deep neural network, that accounted
+for various biases from respondents.
+
+At 18F I worked hard to develop a culture of learning. The level of statistical expertise across
+the federal government tends to be a bit low. There are pockets of incredibly talented people,
+but typically they aren’t very strong. In order to bring statistical thinking and data driven decision
+making to the federal government at large, I would mentor coworkers in data science, so they
+could bring those learnings to our clients. Additionally, I worked closely with my stakeholders
+and team to teach them basic statistics. In order to help bring programming competency as
+well, to the federal government, I taught an introductory Python class, which spanned 6 weeks
+and is still available through youtube: ​https://www.youtube.com/watch?v=v8JtNRwy0cE​ From a
+technical perspective, during this job I worked most heavily on CALC, a tool that helps the
+federal government save money, by analyzing the hourly price of various kinds of contractors.
+For that project I found a number of improvements to the platform which helped reduce an
+estimated 2 billion dollars in federal spending. In addition, if the prototype improvements I
+suggested are leveraged appropriately, another billion could be saved.
+
+Finally, I’d like to touch on my work on the manhattan DAs office. During that job I not only
+completely transformed the way my unit found and stopped human traffickers. I developed a
+culture of learning that took the analysts employed from only being able to work with BI tools, to
+creating a sustainable culture of learning, in which analysts programmed, taught each other,
+and developed general tools across the DAs office.
+
+I bring up each of these examples to provide evidence of my intention. I want to help grow
+people at Etsy, to get stuff done and to help build capacity at the organization. After working
+across a number of mediums and contexts, I believe I could make an impact here for many
+years to come.
+

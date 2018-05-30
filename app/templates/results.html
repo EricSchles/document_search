@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+<div id="content">
+
+{% if results %}
+
+<h4>Results</h4>
+	<p>{{ results["hits"]["total"] }} results ({{results["took"]}}ms)</p>
+
+<div id="container" class="row">
+
+{% for doc in results["hits"]["hits"] %}
+
+	<p><label>Filename: </label>{{doc["_source"]["title"]}}</p>
+	<p><label>Text: </label>{{doc["_source"]["text"]}}</p>
+
+</div>
+{% endfor %}
+
+{% endif %}
+
+</div>
+
+</body>
+</html>
